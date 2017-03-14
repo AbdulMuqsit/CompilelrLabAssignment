@@ -5,6 +5,14 @@
              xmlns:infrastructure="clr-namespace:CompilelrLabAssignment.Infrastructure"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <infrastructure:ViewModelLocator x:Key="ViewModelLocator"/>
+        <ResourceDictionary>
+            <infrastructure:ViewModelLocator x:Key="ViewModelLocator"/>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/BaseResourceDictionary.xaml" />
+                <ResourceDictionary Source="Resources/NavigationResourceDictionary.xaml" />
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
