@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:CompilelrLabAssignment"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525"
-        d:DataContext="{StaticResource ViewModelLocator}">
+        d:DataContext="{StaticResource ViewModelLocator}"
+        DataContext="{StaticResource ViewModelLocator}">
     <Grid>
-        <ContentControl Content="{Binding MainViewModel}"/>
+        <ContentControl Content="{Binding MainViewModel}"
+                        Margin="10"/>
     </Grid>
 </Window>

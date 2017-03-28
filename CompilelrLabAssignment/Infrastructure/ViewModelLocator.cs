@@ -13,6 +13,6 @@ namespace CompilelrLabAssignment.Infrastructure
         {
             MainViewModel = new MainViewModel();
         }
-        public MainViewModel MainViewModel { get; }
+        public MainViewModel MainViewModel { get; set; }
     }
 }
